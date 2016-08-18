@@ -9,9 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.0.1",
-    "azure-storage": "^1.2.0",
-    "nconf": "^0.8.4",
-    "node-uuid": "^1.4.7"
+   
   }
 }

@@ -31,7 +31,7 @@ app.get('/', function (req, res) {
             res.send(recordset);
             
         });
-		console.log("Query No No");
+;
     });
 });
 
