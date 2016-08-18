@@ -1,0 +1,237 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'node-sqlserver' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of D:\workspace\azure\package.json
+5 warn package.json azure@1.0.0 No description
+6 warn package.json azure@1.0.0 No repository field.
+7 warn package.json azure@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\async\package.json
+9 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\azure-storage\package.json
+10 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\body-parser\package.json
+11 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\datapumps\package.json
+12 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\ejs\package.json
+13 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\express\package.json
+14 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\express-session\package.json
+15 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\mongoose\package.json
+16 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\mssql\package.json
+17 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\nconf\package.json
+18 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\node-uuid\package.json
+19 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\passport\package.json
+20 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\passport-local\package.json
+21 verbose installManyTop reading scoped package data from D:\workspace\azure\node_modules\passport-local-mongoose\package.json
+22 info package.json datapumps@0.4.6 No license field.
+23 info package.json node-uuid@1.4.7 No license field.
+24 info package.json passport-local@1.0.0 No license field.
+25 verbose readDependencies loading dependencies from D:\workspace\azure\package.json
+26 silly cache add args [ 'node-sqlserver', null ]
+27 verbose cache add spec node-sqlserver
+28 silly cache add parsed spec Result {
+28 silly cache add   raw: 'node-sqlserver',
+28 silly cache add   scope: null,
+28 silly cache add   name: 'node-sqlserver',
+28 silly cache add   rawSpec: '',
+28 silly cache add   spec: '*',
+28 silly cache add   type: 'range' }
+29 silly addNamed node-sqlserver@*
+30 verbose addNamed "*" is a valid semver range for node-sqlserver
+31 silly addNameRange { name: 'node-sqlserver', range: '*', hasData: false }
+32 silly mapToRegistry name node-sqlserver
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry https://registry.npmjs.org/
+35 silly mapToRegistry uri https://registry.npmjs.org/node-sqlserver
+36 verbose addNameRange registry:https://registry.npmjs.org/node-sqlserver not in flight; fetching
+37 verbose request uri https://registry.npmjs.org/node-sqlserver
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 3:59:40 PM
+40 verbose request id bf7e1938f007438e
+41 verbose etag "7Z3YJO93RP85B4EL3WUVQDFJI"
+42 http request GET https://registry.npmjs.org/node-sqlserver
+43 http 304 https://registry.npmjs.org/node-sqlserver
+44 silly get cb [ 304,
+44 silly get   { date: 'Thu, 18 Aug 2016 10:29:42 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     etag: '"7Z3YJO93RP85B4EL3WUVQDFJI"',
+44 silly get     age: '82',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-sin6920-SIN',
+44 silly get     'x-cache': 'HIT',
+44 silly get     'x-cache-hits': '1',
+44 silly get     'x-timer': 'S1471516182.566929,VS0,VE0',
+44 silly get     vary: 'Accept-Encoding' } ]
+45 verbose etag https://registry.npmjs.org/node-sqlserver from cache
+46 verbose get saving node-sqlserver to C:\Users\dheeraj.bhati\AppData\Roaming\npm-cache\registry.npmjs.org\node-sqlserver\.cache.json
+47 silly addNameRange number 2 { name: 'node-sqlserver', range: '*', hasData: true }
+48 silly addNameRange versions [ 'node-sqlserver', [ '0.1.0' ] ]
+49 silly addNamed node-sqlserver@0.1.0
+50 verbose addNamed "0.1.0" is a plain semver version for node-sqlserver
+51 warn deprecated node-sqlserver@0.1.0: This package has been superseded by msnodesql.
+52 silly cache afterAdd node-sqlserver@0.1.0
+53 verbose afterAdd C:\Users\dheeraj.bhati\AppData\Roaming\npm-cache\node-sqlserver\0.1.0\package\package.json not in flight; writing
+54 verbose afterAdd C:\Users\dheeraj.bhati\AppData\Roaming\npm-cache\node-sqlserver\0.1.0\package\package.json written
+55 silly install resolved [ { name: 'node-sqlserver',
+55 silly install resolved     description: 'Microsoft Driver for Node.js for SQL Server',
+55 silly install resolved     author: { name: 'Microsoft Corp.' },
+55 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+55 silly install resolved     version: '0.1.0',
+55 silly install resolved     keywords: [ 'sql', 'database', 'mssql', 'azure', 'sqlserver', 'tds' ],
+55 silly install resolved     homepage: 'https://github.com/WindowsAzure/node-sqlserver',
+55 silly install resolved     bugs: { url: 'https://github.com/WindowsAzure/node-sqlserver/issues' },
+55 silly install resolved     licenses: [ [Object] ],
+55 silly install resolved     main: './lib/sql.js',
+55 silly install resolved     repository:
+55 silly install resolved      { type: 'git',
+55 silly install resolved        url: 'git://github.com/WindowsAzure/node-sqlserver.git' },
+55 silly install resolved     engines: { node: '0.6' },
+55 silly install resolved     devDependencies: { mocha: '0.14.x', async: '0.1.x' },
+55 silly install resolved     _npmUser: { name: 'jguerin', email: 'jguerin@microsoft.com' },
+55 silly install resolved     _id: 'node-sqlserver@0.1.0',
+55 silly install resolved     scripts: { install: 'node-gyp rebuild' },
+55 silly install resolved     dependencies: {},
+55 silly install resolved     optionalDependencies: {},
+55 silly install resolved     _engineSupported: true,
+55 silly install resolved     _npmVersion: '1.1.24',
+55 silly install resolved     _nodeVersion: 'v0.6.19',
+55 silly install resolved     _defaultsLoaded: true,
+55 silly install resolved     dist:
+55 silly install resolved      { shasum: '8b6ef6375ca20ca322f9e259bb870747a2cb8e6f',
+55 silly install resolved        tarball: 'https://registry.npmjs.org/node-sqlserver/-/node-sqlserver-0.1.0.tgz' },
+55 silly install resolved     maintainers: [ [Object] ],
+55 silly install resolved     directories: {},
+55 silly install resolved     deprecated: 'This package has been superseded by msnodesql.',
+55 silly install resolved     _shasum: '8b6ef6375ca20ca322f9e259bb870747a2cb8e6f',
+55 silly install resolved     _resolved: 'https://registry.npmjs.org/node-sqlserver/-/node-sqlserver-0.1.0.tgz',
+55 silly install resolved     _from: 'node-sqlserver@*',
+55 silly install resolved     gypfile: true,
+55 silly install resolved     readme: 'ERROR: No README data found!' } ]
+56 info install node-sqlserver@0.1.0 into D:\workspace\azure
+57 info installOne node-sqlserver@0.1.0
+58 verbose installOne of node-sqlserver to D:\workspace\azure not in flight; installing
+59 verbose lock using C:\Users\dheeraj.bhati\AppData\Roaming\npm-cache\_locks\node-sqlserver-ae962489bb098d70.lock for D:\workspace\azure\node_modules\node-sqlserver
+60 warn engine node-sqlserver@0.1.0: wanted: {"node":"0.6"} (current: {"node":"4.0.0","npm":"2.14.2"})
+61 silly install write writing node-sqlserver 0.1.0 to D:\workspace\azure\node_modules\node-sqlserver
+62 verbose unbuild node_modules\node-sqlserver
+63 silly gentlyRm D:\workspace\azure\node_modules\node-sqlserver is being purged from base D:\workspace\azure
+64 verbose gentlyRm don't care about contents; nuking D:\workspace\azure\node_modules\node-sqlserver
+65 verbose tar unpack C:\Users\dheeraj.bhati\AppData\Roaming\npm-cache\node-sqlserver\0.1.0\package.tgz
+66 verbose tar unpacking to D:\workspace\azure\node_modules\node-sqlserver
+67 silly gentlyRm D:\workspace\azure\node_modules\node-sqlserver is being purged
+68 verbose gentlyRm don't care about contents; nuking D:\workspace\azure\node_modules\node-sqlserver
+69 silly gunzTarPerm modes [ '777', '666' ]
+70 silly gunzTarPerm extractEntry package.json
+71 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+72 silly gunzTarPerm extractEntry .npmignore
+73 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+74 silly gunzTarPerm extractEntry README.md
+75 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+76 silly gunzTarPerm extractEntry LICENSE
+77 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+78 silly gunzTarPerm extractEntry binding.gyp
+79 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+80 silly gunzTarPerm extractEntry lib/sql.js
+81 silly gunzTarPerm modified mode [ 'lib/sql.js', 420, 438 ]
+82 silly gunzTarPerm extractEntry src/OdbcOperation.cpp
+83 silly gunzTarPerm modified mode [ 'src/OdbcOperation.cpp', 420, 438 ]
+84 silly gunzTarPerm extractEntry src/Column.h
+85 silly gunzTarPerm modified mode [ 'src/Column.h', 420, 438 ]
+86 silly gunzTarPerm extractEntry src/Connection.h
+87 silly gunzTarPerm modified mode [ 'src/Connection.h', 420, 438 ]
+88 silly gunzTarPerm extractEntry src/OdbcConnection.cpp
+89 silly gunzTarPerm modified mode [ 'src/OdbcConnection.cpp', 420, 438 ]
+90 silly gunzTarPerm extractEntry src/OdbcConnection.h
+91 silly gunzTarPerm modified mode [ 'src/OdbcConnection.h', 420, 438 ]
+92 silly gunzTarPerm extractEntry src/OdbcConnectionBridge.h
+93 silly gunzTarPerm modified mode [ 'src/OdbcConnectionBridge.h', 420, 438 ]
+94 silly gunzTarPerm extractEntry src/OdbcException.cpp
+95 silly gunzTarPerm modified mode [ 'src/OdbcException.cpp', 420, 438 ]
+96 silly gunzTarPerm extractEntry src/OdbcException.h
+97 silly gunzTarPerm modified mode [ 'src/OdbcException.h', 420, 438 ]
+98 silly gunzTarPerm extractEntry src/OdbcHandle.h
+99 silly gunzTarPerm modified mode [ 'src/OdbcHandle.h', 420, 438 ]
+100 silly gunzTarPerm extractEntry src/Connection.cpp
+101 silly gunzTarPerm modified mode [ 'src/Connection.cpp', 420, 438 ]
+102 silly gunzTarPerm extractEntry src/OdbcOperation.h
+103 silly gunzTarPerm modified mode [ 'src/OdbcOperation.h', 420, 438 ]
+104 silly gunzTarPerm extractEntry src/Operation.h
+105 silly gunzTarPerm modified mode [ 'src/Operation.h', 420, 438 ]
+106 silly gunzTarPerm extractEntry src/ResultSet.cpp
+107 silly gunzTarPerm modified mode [ 'src/ResultSet.cpp', 420, 438 ]
+108 silly gunzTarPerm extractEntry src/ResultSet.h
+109 silly gunzTarPerm modified mode [ 'src/ResultSet.h', 420, 438 ]
+110 silly gunzTarPerm extractEntry src/stdafx.cpp
+111 silly gunzTarPerm modified mode [ 'src/stdafx.cpp', 420, 438 ]
+112 silly gunzTarPerm extractEntry src/stdafx.h
+113 silly gunzTarPerm modified mode [ 'src/stdafx.h', 420, 438 ]
+114 silly gunzTarPerm extractEntry src/Utility.cpp
+115 silly gunzTarPerm modified mode [ 'src/Utility.cpp', 420, 438 ]
+116 silly gunzTarPerm extractEntry src/Utility.h
+117 silly gunzTarPerm modified mode [ 'src/Utility.h', 420, 438 ]
+118 silly gunzTarPerm extractEntry test/connect.js
+119 silly gunzTarPerm modified mode [ 'test/connect.js', 420, 438 ]
+120 silly gunzTarPerm extractEntry test/query.js
+121 silly gunzTarPerm modified mode [ 'test/query.js', 420, 438 ]
+122 silly gunzTarPerm extractEntry test/runtests.js
+123 silly gunzTarPerm modified mode [ 'test/runtests.js', 420, 438 ]
+124 silly gunzTarPerm extractEntry test/test-config.js
+125 silly gunzTarPerm modified mode [ 'test/test-config.js', 420, 438 ]
+126 silly gunzTarPerm extractEntry test/txn.js
+127 silly gunzTarPerm modified mode [ 'test/txn.js', 420, 438 ]
+128 silly gunzTarPerm extractEntry test/testlist.txt
+129 silly gunzTarPerm modified mode [ 'test/testlist.txt', 420, 438 ]
+130 verbose write writing to D:\workspace\azure\node_modules\node-sqlserver\package.json
+131 info preinstall node-sqlserver@0.1.0
+132 verbose readDependencies loading dependencies from D:\workspace\azure\node_modules\node-sqlserver\package.json
+133 verbose readDependencies loading dependencies from D:\workspace\azure\node_modules\node-sqlserver\package.json
+134 silly install resolved []
+135 verbose about to build D:\workspace\azure\node_modules\node-sqlserver
+136 info build D:\workspace\azure\node_modules\node-sqlserver
+137 info linkStuff node-sqlserver@0.1.0
+138 silly linkStuff node-sqlserver@0.1.0 has D:\workspace\azure\node_modules as its parent node_modules
+139 verbose linkBins node-sqlserver@0.1.0
+140 verbose linkMans node-sqlserver@0.1.0
+141 verbose rebuildBundles node-sqlserver@0.1.0
+142 info install node-sqlserver@0.1.0
+143 verbose unsafe-perm in lifecycle true
+144 info node-sqlserver@0.1.0 Failed to exec install script
+145 verbose unlock done using C:\Users\dheeraj.bhati\AppData\Roaming\npm-cache\_locks\node-sqlserver-ae962489bb098d70.lock for D:\workspace\azure\node_modules\node-sqlserver
+146 verbose stack Error: node-sqlserver@0.1.0 install: `node-gyp rebuild`
+146 verbose stack Exit status 1
+146 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
+146 verbose stack     at emitTwo (events.js:87:13)
+146 verbose stack     at EventEmitter.emit (events.js:172:7)
+146 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+146 verbose stack     at emitTwo (events.js:87:13)
+146 verbose stack     at ChildProcess.emit (events.js:172:7)
+146 verbose stack     at maybeClose (internal/child_process.js:817:16)
+146 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+147 verbose pkgid node-sqlserver@0.1.0
+148 verbose cwd D:\workspace\azure
+149 error Windows_NT 10.0.10586
+150 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "node-sqlserver"
+151 error node v4.0.0
+152 error npm  v2.14.2
+153 error code ELIFECYCLE
+154 error node-sqlserver@0.1.0 install: `node-gyp rebuild`
+154 error Exit status 1
+155 error Failed at the node-sqlserver@0.1.0 install script 'node-gyp rebuild'.
+155 error This is most likely a problem with the node-sqlserver package,
+155 error not with npm itself.
+155 error Tell the author that this fails on your system:
+155 error     node-gyp rebuild
+155 error You can get their info via:
+155 error     npm owner ls node-sqlserver
+155 error There is likely additional logging output above.
+156 verbose exit [ 1, true ]
+157 verbose unbuild node_modules\node-sqlserver
+158 info preuninstall node-sqlserver@0.1.0
+159 info uninstall node-sqlserver@0.1.0
+160 verbose unbuild rmStuff node-sqlserver@0.1.0 from D:\workspace\azure\node_modules
+161 info postuninstall node-sqlserver@0.1.0
+162 silly gentlyRm D:\workspace\azure\node_modules\node-sqlserver is being purged from base D:\workspace\azure
+163 verbose gentlyRm don't care about contents; nuking D:\workspace\azure\node_modules\node-sqlserver
+164 silly vacuum-fs purging D:\workspace\azure\node_modules\node-sqlserver
+165 silly vacuum-fs quitting because other entries in D:\workspace\azure\node_modules
