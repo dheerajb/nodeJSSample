@@ -1,10 +1,38 @@
 var express = require('express');
 var app = express();
-var port = process.env.PORT || 3000;
+
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+   
+    var sql = require("mssql");
+
+    // config for your database
+    var config = {
+        user: 'loladmin',
+        password: 'SitL0Lpass',
+        server: 'lolsitdataserver.database.windows.net', 
+        database: 'lolsitdatabase' 
+    };
+
+    // connect to your database
+    sql.connect(config, function (err) {
+    
+        if (err) console.log(err);
+
+        // create Request object
+        var request = new sql.Request();
+           
+        // query to the database and get the records
+        request.query('select * from Student', function (err, recordset) {
+            
+            if (err) console.log(err)
+
+            // send records as a response
+            res.send(recordset);
+            
+        });
+    });
 });
 
-app.listen(port, function () {
+app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
